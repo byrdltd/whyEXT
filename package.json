@@ -1,0 +1,29 @@
+{
+  "name": "whyext",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-extension monorepo for whyEXT",
+  "scripts": {
+    "typecheck": "node scripts/typecheck-all.js",
+    "build:dark-mode:chrome": "node scripts/build.js dark-mode chrome",
+    "build:dark-mode:firefox": "node scripts/build.js dark-mode firefox",
+    "build:dark-mode": "npm run build:dark-mode:chrome && npm run build:dark-mode:firefox",
+    "build:image-quick-save:chrome": "node scripts/build.js image-quick-save chrome",
+    "build:image-quick-save:firefox": "node scripts/build.js image-quick-save firefox",
+    "build:image-quick-save": "npm run build:image-quick-save:chrome && npm run build:image-quick-save:firefox",
+    "build:youtube-subbar:chrome": "node scripts/build.js youtube-subbar chrome",
+    "build:youtube-subbar:firefox": "node scripts/build.js youtube-subbar firefox",
+    "build:youtube-subbar": "npm run build:youtube-subbar:chrome && npm run build:youtube-subbar:firefox",
+    "build": "node scripts/build-all.js",
+    "test:unit": "vitest run",
+    "test:build-smoke": "node scripts/test-build-smoke.js",
+    "test": "npm run test:unit && npm run test:build-smoke",
+    "scaffold:extension": "node scripts/scaffold-extension.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.40",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9",
+    "vitest": "^4.1.5"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "whyEXT <extension-name>",
+  "version": "0.1.0",
+  "description": "Template extension for whyEXT.",
+  "action": {
+    "default_title": "<extension-name>",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Subbar Options</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding: 16px;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .panel {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 12px;
+        margin-top: 10px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 8px;
+        font-size: 14px;
+      }
+      .muted {
+        color: #555;
+        font-size: 13px;
+      }
+      select {
+        margin-left: auto;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 10px;
+        border: 1px solid #c7c7c7;
+        border-radius: 8px;
+        background: #f7f7f7;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>YouTube Subbar Options</h1>
+    <p id="status" class="muted">Loading...</p>
+
+    <section class="panel">
+      <label>
+        <input id="enabled" type="checkbox" />
+        Enable extension
+      </label>
+      <label>
+        Visibility mode
+        <select id="visibility-mode">
+          <option value="subscriptions-only">Subscriptions page only</option>
+          <option value="site-wide">Site-wide</option>
+        </select>
+      </label>
+      <label>
+        <input id="compact-mode" type="checkbox" />
+        Compact mode (smaller panel)
+      </label>
+      <button id="clear-pins" type="button">Clear pinned channels</button>
+    </section>
+
+    <script src="options.js"></script>
+  </body>
+</html>

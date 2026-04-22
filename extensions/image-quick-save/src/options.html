@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Quick Save Options</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding: 16px;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .panel {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 12px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 8px 0;
+      }
+      .muted {
+        color: #555;
+        font-size: 13px;
+      }
+      #status {
+        margin: 0 0 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Quick Save Options</h1>
+    <p id="status" class="muted">Loading...</p>
+
+    <section class="panel">
+      <label>
+        <input id="enabled" type="checkbox" />
+        Enable hover save button on images
+      </label>
+      <label>
+        <input id="saveAs" type="checkbox" />
+        Always show "Save As" dialog before download
+      </label>
+    </section>
+
+    <p class="muted">
+      Downloads use original image URLs (`currentSrc` / `src`) to avoid quality loss from screenshot/canvas capture.
+    </p>
+
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Options</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding: 16px;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .panel {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+        margin-top: 10px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+      }
+      button {
+        border: 1px solid #c7c7c7;
+        border-radius: 8px;
+        background: #f7f7f7;
+        cursor: pointer;
+        padding: 8px 10px;
+      }
+      ul {
+        padding-left: 18px;
+      }
+      .muted {
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dark Mode Options</h1>
+    <p id="status" class="muted">Ready.</p>
+
+    <section class="panel">
+      <h2>Enabled domains</h2>
+      <ul id="domains"></ul>
+      <div class="row">
+        <button id="clear-all" type="button">Clear all domains</button>
+      </div>
+    </section>
+
+    <script src="options.js"></script>
+  </body>
+</html>

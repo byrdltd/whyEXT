@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 320px;
+  padding: 12px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.label {
+  margin: 0;
+  color: #666;
+  font-size: 11px;
+}
+
+#domain {
+  margin: 2px 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.muted {
+  color: #555;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 8px;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ececec;
+}

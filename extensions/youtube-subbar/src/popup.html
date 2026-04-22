@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Subbar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>YouTube Subbar</h1>
+      <p id="status" class="muted">Loading...</p>
+      <label class="row">
+        <input id="enabled" type="checkbox" />
+        Enable extension
+      </label>
+      <label class="row">
+        Visibility
+        <select id="visibility-mode">
+          <option value="subscriptions-only">Subscriptions page only</option>
+          <option value="site-wide">Site-wide</option>
+        </select>
+      </label>
+      <button id="open-options" type="button">Open options</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
